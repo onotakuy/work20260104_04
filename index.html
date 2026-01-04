@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マドゥロ大統領拘束に対する各国の反応</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>マドゥロ大統領拘束に対する各国の反応</h1>
+            <p class="subtitle">2026年1月3日の米軍によるベネズエラへの攻撃とニコラス・マドゥロ大統領拘束に対する主要国の反応</p>
+        </header>
+
+        <div class="legend">
+            <h2>凡例</h2>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <span class="legend-color strong-oppose"></span>
+                    <span class="legend-label">🔴 強く非難（反対）</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color concern"></span>
+                    <span class="legend-label">🟡 懸念表明・中立的立場</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color support"></span>
+                    <span class="legend-label">🟢 支持・肯定的反応</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color no-response"></span>
+                    <span class="legend-label">⚪ 公式反応なし</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="country-list">
+            <h2>各国の反応詳細</h2>
+            <div id="country-details"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
